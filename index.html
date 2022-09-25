@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="random.js"></script>
+        <link rel="stylesheet" href="random.css">
+    </head>
+    <body>
+        <header>
+            <h1>Random color picker</h1>
+        
+        <nav>
+            <ul>
+                <li>
+                    <button value="range" id="range" name="range">
+                        Pick color range
+                    </button>
+                </li>
+                <li>
+                    <button value="random" id="Random" name="Random" onclick="rand()">
+                       Pick random color
+                    </button>
+                </li>
+                <li>
+                    <button value="hex" id="hex" name="hex">
+                        Enter color hex values
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <article>
+            <div id="display">
+
+            </div>
+            <div id="value">
+                <p id="int">rgba(245,245,245)</p>
+
+            </div>
+        </article>
+        <aside>
+
+        </aside>
+        <footer>
+
+        </footer>
+    </body>
+</html>
