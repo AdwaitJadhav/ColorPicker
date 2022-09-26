@@ -1,5 +1,3 @@
-
-
 function rand(){
     let disp=document.getElementById("display");
     let rand1=Math.floor((Math.random()*255));
@@ -65,15 +63,44 @@ function green(){
 function slidedown(){
     let par=document.getElementById("range");
     let li=document.getElementById("ranop");
+    let hex=document.getElementById("hex");
     if(li.style.display=="none"){
-        li.style.transitionProperty="display";
-        li.style.transitionDelay="2s";
         li.style.display="block";
+        li.style.visibility="visible";
+        hex.style.display="none";
     }
     else{
-        li.style.transitionProperty="display";
-        li.style.transitionDelay="2s";
+        
         li.style.display="none";
+        li.style.visibility="hidden";
+        hex.style.display="inline-block";
     }
+}
+
+function input(){
+    let inp1=document.getElementById('red1').value;
+    let inp2=document.getElementById('green1').value;
+    let inp3=document.getElementById('blue1').value;
+    let inp4=document.getElementById('op1').value;
+    let disp=document.getElementById("display");
+    let val=document.getElementById("value");
+    let hid=document.getElementById("int");
+    if(inp1==""){
+        inp1=0;
+    }
+    if(inp2==""){
+        inp2=0;
+    }
+    if(inp3==""){
+        inp3=0;
+    }
+    if(inp4==""){
+        inp4=1;
+    }
+    let color="rgba("+inp1+","+inp2+","+inp3+","+inp4+")";
+    disp.style.backgroundColor=color;
+    val.innerHTML=color;
+    hid.style.display="none";
+
 }
 
