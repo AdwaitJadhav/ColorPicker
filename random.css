@@ -70,7 +70,7 @@ nav li button:active{
 
 #value{
     position: absolute;
-    bottom:18%;
+    bottom:10%;
     left:35%;
 }
 
@@ -81,7 +81,7 @@ nav li button:active{
 }
 
 #display{
-    width: 300px;
+    width:300px;
     height:300px;
     background-color:whitesmoke;
     border: inset 10px;
@@ -89,9 +89,34 @@ nav li button:active{
     border-color: grey;
     position: absolute;
     left: 37%;
-    top: 30%;
-    transition: background-color 0.9s ;
+    top: 35%;
+    transition: background-color 0.9s;
 
 }
 
+#ranop{
+    display: none;
+    position: absolute;
+    right:47%;
+    
+    
+}
+
+#red{
+    padding-right: 103%;
+}
+
+#blue{
+    padding-right: 96%;
+}
+
+#green{
+    padding-right: 89%;
+}
+
+#ranop li{
+    list-style: none;
+    display: list-item;
+    
+}
 
