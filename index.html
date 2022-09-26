@@ -13,13 +13,30 @@
         <nav>
             <ul>
                 <li>
-                    <button value="range" id="range" name="range">
+                    <button value="range" id="range" name="range" onclick="slidedown()">
                         Pick color range
                     </button>
+                    <ul id="ranop">
+                        <li id="ranlist">
+                            <button value="red" id="red" name="red" onclick="red()">
+                                Red
+                            </button>
+                        </li>
+                        <li>
+                            <button value="blue" id="blue" name="blue" onclick="blue()">
+                                Blue
+                            </button>
+                        </li>
+                        <li>
+                            <button value="green" id="green" name="green" onclick="green()">
+                                Green
+                            </button>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <button value="random" id="Random" name="Random" onclick="rand()">
-                       Pick random color
+                       Pick a random color
                     </button>
                 </li>
                 <li>
@@ -36,7 +53,6 @@
             </div>
             <div id="value">
                 <p id="int">rgba(245,245,245)</p>
-
             </div>
         </article>
         <aside>
